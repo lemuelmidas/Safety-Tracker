@@ -1,4 +1,4 @@
-Tech Stack: Full stack
+Tech Stack: Others
 
 Usecase: This project, Safety Tracker, is used to track the safety of a property.
 
