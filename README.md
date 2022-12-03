@@ -8,5 +8,6 @@ The location reported by the tracker will be updated for a vehicle, for as long 
 
 Another example is for a house. The IOT tracker is set to give a real time update of accidents, like fire accident. If a fire accident occurs, a signal is sent immediately to a nearby help center and safety operations begin immediately. Resultantly, many more lives and properties can be saved with its application compared to availiable rescue systems.
 
+Additional Note: This is a work in progress.
 
 
