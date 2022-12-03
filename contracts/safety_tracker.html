@@ -1,0 +1,45 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safety Tracker App</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px auto;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Safety Tracker</h1>
+    <p>Use the form below to add a new property to the safety tracker:</p>
+    <form>
+        <label for="propertyId">Property ID:</label><br>
+        <input type="number" id="propertyId"><br>
+        <label for="propertyName">Property Name:</label><br>
+        <input type="text" id="propertyName"><br>
+        <label for="propertyDescription">Property Description:</label><br>
+        <textarea id="propertyDescription"></textarea><br>
+        <label for="propertyLocation">Property Location:</label><br>
+        <input type="number" id="propertyLocation"><br><br>
+        <label for="helpCenter">HelpCenter:</label><br>
+        <input type="number" id="helpcenter"><br><br>
+        <button type="button" id="addPropertyButton">Add Product</button>
+    </form>
+    <hr>
+    <h2>Properties in the Safety Tracker</h2>
+    <table id="propertyTable">
+        <tr>
+            <th>Property ID</th>
+            <th>Property Name</th>
+            <th>Property Description</th>
+            <th>Property Location</th>
+            <th>Help Center</th>
+        </tr>
+    </table>
+    <hr>
+    <p>
+        
