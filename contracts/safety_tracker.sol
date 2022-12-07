@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.7.0;
 
 contract SafetyTracker {
@@ -8,11 +9,17 @@ contract SafetyTracker {
     string origin;
     string destination;
     string location;
-    string helpCenter;
     uint quantity;
   }
+  struct HelpCenter{
+    string helpCenter;
+    string helpCenterLocation;
+    uint helpCenterId;
+  }
+  //Define an array of help centers
+  HelpCenter[] public helpCenter;
 
-  // Define an array of products
+  // Define an array of properties
   Property[] public properties;
 
   // Function to add a property to the safety tracker
@@ -23,7 +30,7 @@ contract SafetyTracker {
 
   // Function to update the location of a property in the supply chain
   function updateProperty(uint _propertyId, string memory _location) public {
-    for (uint i = 0; i < property.length; i++) {
+    for (uint i = 0; i < properties.length; i++) {
       if (properties[i].propertyId == _propertyId) {
         properties[i].location = _location;
         return;
@@ -42,10 +49,10 @@ contract SafetyTracker {
   }
 
   // Function to update the location of a help center in the safety tracker
-  function updateHelpCenter(uint _helpCenterId, uint _helpCenterLocation) public {
-    for (uint i = 0; i < helpCenters.length; i++) {
-      if (helpCenters[i].helpCenterId == _helpCenterId) {
-        helpCenters[i].location = _location;
+  function updateHelpCenter(uint _helpCenterId, string memory _helpCenterLocation) public {
+    for (uint i = 0; i < helpCenter.length; i++) {
+      if (helpCenter[i].helpCenterId == _helpCenterId) {
+        helpCenter[i].helpCenterLocation = _helpCenterLocation;
         return;
       }
     }

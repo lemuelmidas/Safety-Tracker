@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\Wommack\\Polygon Hackathon(Safety Tracker)\\Safety-Tracker\\contracts\\safety_tracker.sol": {
+      "lastModificationDate": 1670432487533,
+      "contentHash": "e70d685c5d8a5514fefc04003d1f9ec3",
+      "sourceName": "contracts/safety_tracker.sol",
+      "solcConfig": {
+        "version": "0.7.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafetyTracker"
+      ]
+    }
+  }
+}
